@@ -1,0 +1,37 @@
+.editor-pane {
+    flex: 1;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .pane-header {
+    background-color: #eaeaea;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .editor {
+    width: 100%;
+    height: calc(100% - 37px);
+    border: none;
+    resize: none;
+    padding: 20px;
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .editor-pane {
+      height: 50vh;
+    }
+  }
