@@ -71,3 +71,31 @@ body, html, #root, .App {
     flex-direction: column;
   }
 }
+
+/* Add these styles */
+.hidden {
+  display: none !important;
+}
+
+.mobile-toggle {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.toggle-btn {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dark-mode .mobile-toggle {
+  background-color: #2d2d2d;
+  border-color: #444;
+}

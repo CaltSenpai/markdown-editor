@@ -19,9 +19,21 @@ function App() {
     setDarkMode(newDarkMode);
     localStorage.setItem('darkMode', newDarkMode);
   };
-  
 
   const [mobileView, setMobileView] = useState('editor'); // 'editor' or 'preview'
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const isMobile = windowWidth < 768;
+
   const toggleMobileView = () => {
     setMobileView(mobileView === 'editor' ? 'preview' : 'editor');
   };
@@ -38,7 +50,8 @@ function App() {
   return (
     <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
       <Header toggleTheme={toggleTheme} isDarkMode={darkMode} />
-      {window.innerWidth < 768 && (
+      
+      {isMobile && (
         <div className="mobile-toggle">
           <button 
             onClick={toggleMobileView}
@@ -48,15 +61,16 @@ function App() {
           </button>
         </div>
       )}
+      
       <div className="split-container">
         <Editor 
           value={markdown} 
           onChange={handleChange}
-          className={window.innerWidth < 768 && mobileView !== 'editor' ? 'hidden' : ''}
+          className={isMobile && mobileView !== 'editor' ? 'hidden' : ''}
         />
         <Preview 
           markdown={markdown}
-          className={window.innerWidth < 768 && mobileView !== 'preview' ? 'hidden' : ''}
+          className={isMobile && mobileView !== 'preview' ? 'hidden' : ''}
         />
       </div>
     </div>

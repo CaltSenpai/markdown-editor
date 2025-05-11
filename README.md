@@ -16,6 +16,11 @@ A responsive web application for writing and previewing markdown content with li
 - CSS for responsive design
 - Local storage for saving preferences
 
+## Responsive Design
+
+- Desktop: Side-by-side editor and preview panes
+- Mobile: Toggle between editor and preview for optimal use on small screens
+
 ## Setup and Running
 
 1. Clone this repository
