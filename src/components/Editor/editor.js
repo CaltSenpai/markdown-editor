@@ -1,9 +1,9 @@
 import React from 'react';
 import './Editor.css'
 
-function Editor({ value, onChange }) {
+function Editor({ value, onChange, className }) {
   return (
-    <div className="editor-pane">
+    <div className={`editor-pane ${className || ''}`}>
       <div className="pane-header">MARKDOWN</div>
       <textarea
         value={value}

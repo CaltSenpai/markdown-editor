@@ -67,8 +67,14 @@ body, html, #root, .App {
 }
 
 @media (max-width: 768px) {
+  /* Keep the split container as row (side-by-side) */
   .split-container {
-    flex-direction: column;
+    flex-direction: row;
+  }
+
+  /* Make each pane take full width when visible */
+  .editor-pane, .preview-pane {
+    width: 100%;
   }
 }
 
@@ -96,6 +102,19 @@ body, html, #root, .App {
 }
 
 .dark-mode .mobile-toggle {
-  background-color: #2d2d2d;
-  border-color: #444;
+  background-color: #2d3748;
+  border-bottom: 1px solid #4a5568;
+}
+
+/* Add these styles for the dark mode toggle button */
+.dark-mode .toggle-btn {
+  background-color: #4a5568;
+  color: #e2e8f0;
+  border: 1px solid #718096;
+  transition: all 0.3s ease;
+}
+
+.dark-mode .toggle-btn:hover {
+  background-color: #667eea;
+  border-color: #7f9cf5;
 }

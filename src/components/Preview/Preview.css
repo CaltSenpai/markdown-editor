@@ -56,3 +56,10 @@
       height: 50vh;
     }
   }
+  
+  /* Add these dark mode styles */
+  .dark-mode .preview-pane .pane-header {
+    background-color: #2d3748;
+    color: #e2e8f0;
+    border-bottom: 1px solid #4a5568;
+  }
