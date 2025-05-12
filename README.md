@@ -5,7 +5,7 @@ A modern, responsive Markdown editor with live preview, file management, and exp
 ## Features
 
 - **Live Markdown Editing & Preview**  
-  Write markdown and instantly see the rendered preview side-by-side.
+  - Write markdown and instantly see the rendered preview side-by-side.
 
 - **File Management**  
   - Create new markdown files (with custom file names)
@@ -17,13 +17,13 @@ A modern, responsive Markdown editor with live preview, file management, and exp
   - Export your markdown as a PDF (prints the rendered preview)
 
 - **Drag-and-Drop Support**  
-  Drag a markdown file onto the editor to open it.
+  - Drag a markdown file onto the editor to open it.
 
 - **Responsive Design**  
-  Works on desktop and mobile, with a toggle for editor/preview on small screens.
+  - Works on desktop and mobile, with a toggle for editor/preview on small screens.
 
 - **Dark Mode**  
-  Toggle between light and dark themes.
+  - Toggle between light and dark themes.
 
 ## Getting Started
 
