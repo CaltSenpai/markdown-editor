@@ -35,7 +35,7 @@ A modern, responsive Markdown editor with live preview, file management, and exp
 ### Installation
 
 ```bash
-git clone https://github.com/CaltSenpai/markdownEditor.git
+git clone https://github.com/CaltSenpai/markdown-editor.git
 cd markdown-editor
 npm install
 npm start
