@@ -2,6 +2,9 @@
     flex: 1;
     height: 100%;
     overflow: auto;
+    background: #fafbfc;
+    border-left: 1px solid #e0e0e0;
+    border-radius: 0 !important;
   }
   
   .pane-header {
@@ -58,6 +61,11 @@
   }
   
   /* Add these dark mode styles */
+  .dark-mode .preview-pane {
+    background: #23272f;
+    border-left: 1px solid #444;
+  }
+  
   .dark-mode .preview-pane .pane-header {
     background-color: #2d3748;
     color: #e2e8f0;

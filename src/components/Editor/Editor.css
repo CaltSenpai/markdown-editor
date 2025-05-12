@@ -2,6 +2,7 @@
     flex: 1;
     height: 100%;
     overflow: auto;
+    border-radius: 0 !important;
   }
   
   .pane-header {
@@ -28,6 +29,23 @@
     outline: none;
     background-color: #f9f9f9;
     transition: background-color 0.3s ease;
+  }
+  
+  .editor-pane textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    font-family: 'Fira Mono', 'Consolas', monospace;
+    color: #222;
+    resize: none;
+    outline: none;
+  }
+  
+  .dark-mode .editor-pane textarea {
+    color: #e0e0e0;
+    background: transparent;
   }
   
   @media (max-width: 768px) {
